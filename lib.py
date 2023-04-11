@@ -8,11 +8,6 @@ def clean_sentence(sentence):
     clean_sentence = lower_case.translate(str.maketrans('', '', string_punctuation))
     return clean_sentence
 
-# def clean_chi_sentence(sentence):
-#     string_punctuation = string.punctuation + "。" + "！" + "，" +"？"
-#     clean_sentence = sentence.translate(str.maketrans('', '', string_punctuation))
-#     return clean_sentence
-
 def tokenise(sentence):
     txt_tokeniser = Tokenizer()
     txt_tokeniser.fit_on_texts(sentence)
